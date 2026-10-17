@@ -1,0 +1,29 @@
+main {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.MS {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-areas:
+    "header"
+    "article1"
+    "article2"
+    "article3"
+    "article4"
+    "footer";
+    gap: 10px;
+  font-family: system-ui, sans-serif;
+}
+
+.Head .navbar{ grid-area: header; background-color: #cffafe; }
+.Sales { grid-area: article1; background-colour: pink;}
+  padding: 16px;
+  border: 1px solid #94a3b8;
