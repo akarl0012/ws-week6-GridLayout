@@ -1,29 +1,91 @@
-main {
+body {
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
-img{
+/* img{
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 20px; */
+/* } */
+
+/* .Head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  padding: 12px 16px;
 }
-.MS {
+.brand {
+    justify-content: center
+}
+.links { display: flex; gap: 16px; }
+
+.page {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  grid-template-areas:
-    "header"
-    "article1"
-    "article2"
-    "article3"
-    "article4"
-    "footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 3fr;
+  grid-template-areas: 
+    "header header header"
+    "article1 article1 article1"
+    "article2 article2 article2"
+    "article3 article3 article3"
+    "article4 article4 article4"
+    "footer footer footer";
     gap: 10px;
   font-family: system-ui, sans-serif;
 }
 
-.Head .navbar{ grid-area: header; background-color: #cffafe; }
-.Sales { grid-area: article1; background-colour: pink;}
+.Head { grid-area: header; background-color: #b0f8ff; }
+.navbar { grid-area: header; background-color: #b0f8ff}
+.Sale { grid-area: article1; background-color: pink;}
+.Seasonal { grid-area: article2; background-color: rgb(37, 136, 64);}
+.SO { grid-area: article3; background-color: rgb(25, 157, 177);}
+.SMB { grid-area: article4; background-color: rgb(166, 47, 172);}
+.Foot { grid-area: footer; background-color: rgb(236, 166, 68);}
+ .page > * {
   padding: 16px;
   border: 1px solid #94a3b8;
+ } */
+
+ .page {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, minmax(120px, auto));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fffdef;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+ }
+
+ .Head {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffdef;
+    padding: 0 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px;
+    rgab(44, 74, 62, 0, 0.05);
+ }
+ .brand {
+    font-size: 1.5rem;
+    font-weight: Bold;
+    letter-spacing: 1px;
+ }
+ .links a {
+    margin-left:25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s;
+ }
+ .links a:hover { 
+    color: BA8629;
+
+ }
