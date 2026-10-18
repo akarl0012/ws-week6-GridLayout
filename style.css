@@ -74,7 +74,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05); 
  }
- 
+
  .menu  {
   order: 1;
 }
@@ -124,54 +124,28 @@ body {
   margin-bottom: 12px;
 }
 
- /* .Sale { 
-    grid-column: 2 / 6;
-    grid-row: 2 / 4;
-    background-color: fuchsia
-    
-}
-.Sale h2 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.Sale p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.Sale { 
+  grid-column: 2 / 6;
+  grid-row: 2 / 4;
+  background-color: #e056fd; /* Softened vibrant fuchsia for flowers */
+  color: #ffffff;
 }
 
 .Seasonal {
   grid-column: 2 / 6;
   grid-row: 4 / 5;
-  background: rgb(67, 59, 220);
-}
-
-.Seasonal h2 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.Seasonal p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  background: #433bdc;
+  color: #ffffff;
 }
 
 .SO {
   grid-column: 2 / 6;
   grid-row: 5 / 7;
-  background: rgb(59, 220, 126);
-}
-.SO h2 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
+  background: #3bdc7e;
+  color: #0b3d1f;
 }
 
-.SO p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-} */
-
-/* .SMB {
+.SMB {
   grid-column: 1 / 7;
   grid-row: 7 / 8;
   display: flex;
@@ -179,68 +153,20 @@ body {
   align-items: center;
   background-color: #f4d6cc; 
   color: #2c4a3e;
- padding: 0 30px;
-border-radius: 12px;
-box-shadow: 0 4px 12px;
-rgba (44, 74, 62, 0, 0.05);
- }
+  padding: 0 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05);
+}
 
- .Foot {
+.Foot {
   grid-column: 1 / 7;
   grid-row: 8 / 9;
   background-color: #d88260;
-  color: #323030;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  font-size: 0.9rem;
-} */
-
-.Sale { 
-      grid-column: 2 / 6;
-      grid-row: 2 / 4;
-      background-color: #e056fd; /* Softened vibrant fuchsia for flowers */
-      color: #ffffff;
-    }
-
-    .Seasonal {
-      grid-column: 2 / 6;
-      grid-row: 4 / 5;
-      background: #433bdc;
-      color: #ffffff;
-    }
-
-    .SO {
-      grid-column: 2 / 6;
-      grid-row: 5 / 7;
-      background: #3bdc7e;
-      color: #0b3d1f;
-    }
-
-    .SMB {
-      grid-column: 1 / 7;
-      grid-row: 7 / 8;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #f4d6cc; 
-      color: #2c4a3e;
-      padding: 0 30px;
-      border-radius: 14px;
-      box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05);
-    }
-
-    .Foot {
-      grid-column: 1 / 7;
-      grid-row: 8 / 9;
-      background-color: #d88260;
-      color: #ffffff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 14px;
-      font-size: 0.95rem;
-      font-weight: 500;
-
-    }
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
