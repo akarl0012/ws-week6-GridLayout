@@ -64,41 +64,48 @@ body {
  }
 
  .Head {
-    grid-column: 1 / 7;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #bbaf55;
-    padding: 0 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px;
-    rgba(44, 74, 62, 0, 0.05);
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bbaf55;
+  padding: 0 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05); 
  }
+ 
+ .menu  {
+  order: 1;
+}
+
  .brand {
+    order: 2;
     font-size: 1.5rem;
     font-weight: Bold;
     letter-spacing: 1px;
-    align-items: center;
+    
  }
- .links a {
-    margin-right:25px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    transition: color 0.3s;
- }
- .links a:hover { 
-    color: BA8629;
+ .links {
+    order: 2;
  }
 
-.menu a {
-    margin-left: 25px;
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    transition: color 0.3s;
+ .links a, .menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
 }
+
+.links a {
+  margin-left: 25px; 
+}
+
+.links a:hover, .menu a:hover { 
+  color: #BA8629; 
+}
+
+
 .card {
   background-color: #ffffff;
   border-radius: 16px;
