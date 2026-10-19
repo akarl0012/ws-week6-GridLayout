@@ -127,8 +127,10 @@ body {
 .Sale { 
   grid-column: 2 / 6;
   grid-row: 2 / 4;
-  background-color: #e056fd; /* Softened vibrant fuchsia for flowers */
+  background-color: #e056fd; 
   color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
 }
 
 .Seasonal {
@@ -136,6 +138,8 @@ body {
   grid-row: 4 / 5;
   background: #433bdc;
   color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
 }
 
 .SO {
@@ -143,6 +147,8 @@ body {
   grid-row: 5 / 7;
   background: #3bdc7e;
   color: #0b3d1f;
+  border-radius: 20px;
+  padding: 40px 30px;
 }
 
 .SMB {
@@ -153,10 +159,17 @@ body {
   align-items: center;
   background-color: #f4d6cc; 
   color: #2c4a3e;
-  padding: 0 30px;
-  border-radius: 14px;
+  padding: 40px 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05);
 }
+/* .Sale .product-image, .Seasonal .product-image, .SO .product-image {
+  width: 100%;
+  max-height: 220px;         
+  object-fit: cover;         
+  border-radius: 12px;
+  margin-bottom: 15px;
+} */
 
 .Foot {
   grid-column: 1 / 7;
@@ -164,9 +177,29 @@ body {
   background-color: #d88260;
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 30px;
   border-radius: 14px;
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 300px;
+  padding: none;
+}
+
+.about a, .contact a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.about a:hover, .contact a:hover { 
+  color: #1edff5; 
 }
