@@ -135,7 +135,7 @@ body {
   background-color: #e056fd; 
   color: #ffffff;
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 3vw, 30px);
 }
 
 .Seasonal {
@@ -144,7 +144,8 @@ body {
   background: #433bdc;
   color: #ffffff;
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 3vw, 30px);
+
 }
 
 .SO {
@@ -153,7 +154,8 @@ body {
   background: #3bdc7e;
   color: #0b3d1f;
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 3vw, 30px);
+
 }
 
 .SMB {
@@ -164,7 +166,7 @@ body {
   align-items: center;
   background-color: #f4d6cc; 
   color: #2c4a3e;
-  padding: 40px 30px;
+  padding: clamp(20px, 5vw, 40px) clamp(15px, 3vw, 30px);
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(44, 74, 62, 0.05);
 }
