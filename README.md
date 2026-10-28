@@ -14,7 +14,10 @@ Fonts: Cormorant and Helvetica
 
 Issues with the base HTML has made this more difficult than needed to be. Require more reading on the subject to properly understand the steps to proper layout design. Especially the lineing of links in different rows. 
 
-ws-week7-  Media Queries 
+Updated: ws-week7-  Media Queries 
 step one added the proper media tag to HTML
 removed the width queries
 added the media min width to card tags
+added the card containers 
+tested on 2nd pc monitor 
+tested on mobile phone
