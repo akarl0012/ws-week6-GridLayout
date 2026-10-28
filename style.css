@@ -3,11 +3,7 @@ body {
   background-color: white;
 }
 
-/* img{
-  width: 100%;
-  height: auto;
-  border-radius: 20px; */
-/* } */
+
 
 /* .Head {
   display: flex;
@@ -52,6 +48,15 @@ body {
 
 /* adding additions for assignment 7  */
 
+/* needed to reinstate the image tag for site wide changes  */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
  .page {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -83,7 +88,7 @@ body {
 
  .brand {
     order: 2;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     font-weight: Bold;
     letter-spacing: 1px;
     
@@ -106,10 +111,10 @@ body {
 .links a:hover, .menu a:hover { 
   color: #BA8629; 
 }
+/* breakpoint set at 650px because the .brand and .links start overlapping below this width  */
+@media screen and (min-width: 650px) { 
 
-@media screen and (min-width: 600px) { 
-
-.card {
+  .card {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 20px;
@@ -120,14 +125,28 @@ body {
   transition: transform 0.3s ease;
   }
 }
-
-.card img {
+/* container implementation on cards  */
+/* .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 12px;
+} */
+.Sale, .Seasonal, .SO {
+  container-type: inline-size;
+  container-name: conetent-card;
+  border-radius: 20px;
+  padding: 40px 30px;
+  color: white;
 }
+@contatiner content-card(min-width:450) {
+  .card-inner {
+    display: flex;
+    gap: 20px;
+  }
+}
+
 
 .Sale { 
   grid-column: 2 / 6;
